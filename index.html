@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧機械電控系統整合與設計實務</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .card-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+        .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #334155;
+            margin-bottom: 1rem;
+        }
+        .list-item::before {
+            content: "•";
+            color: #3b82f6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .text-blue-600 {
+            color: #3b82f6;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .nav-item.active {
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-white shadow-lg z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-blue-800 mb-4 md:mb-0">智慧機械電控系統課程</a>
+            <div class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
+                <a href="#introduction" class="nav-link text-gray-600 transition duration-300 ease-in-out">簡介</a>
+                <a href="#objectives" class="nav-link text-gray-600 transition duration-300 ease-in-out">目標與成效</a>
+                <a href="#schedule" class="nav-link text-gray-600 transition duration-300 ease-in-out">課程進度</a>
+                <a href="#resources" class="nav-link text-gray-600 transition duration-300 ease-in-out">課程資源</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-800 text-white py-12 md:py-24 text-center">
+        <div class="container">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-4">智慧機械電控系統整合與設計實務</h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto">本課程旨在培養學生具備獨立完成機電整合專案的能力，從硬體選用、電路設計到程式撰寫，完整體驗電控專案的開發流程。</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-8 md:py-16">
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="mb-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">課程簡介</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-lg mb-2 text-blue-600">課程資訊</h3>
+                        <p class="text-gray-700"><span class="font-bold">學分數／時數：</span> 2 學分 / 每週 2 小時，共 18 週 (36 小時)</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-lg mb-2 text-blue-600">適合對象</h3>
+                        <p class="text-gray-700">機械、電機、資訊相關科系大三、大四學生</p>
+                        <p class="text-sm text-gray-500 mt-2">建議具備基礎電機或程式設計知識。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-lg mb-2 text-blue-600">教學方式</h3>
+                        <ul class="list-none space-y-1 text-gray-700 pl-4">
+                            <li class="list-item">理論與實作結合</li>
+                            <li class="list-item">業界講師與企業合作</li>
+                            <li class="list-item">分組專題製作</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-lg mb-2 text-blue-600">成績配比</h3>
+                        <ul class="list-none space-y-1 text-gray-700 pl-4">
+                            <li class="list-item">出席與參與: 10%</li>
+                            <li class="list-item">課堂作業: 20%</li>
+                            <li class="list-item">中期檢核: 20%</li>
+                            <li class="list-item">專題成果展示: 30%</li>
+                            <li class="list-item">文件與簡報: 20%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objectives Section -->
+        <section id="objectives" class="mb-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">課程目標與學習成效</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="subsection-title">課程目標</h3>
+                        <ul class="list-none space-y-2 text-gray-700 pl-4">
+                            <li class="list-item">理解電控系統在智慧機械中的角色與重要性。</li>
+                            <li class="list-item">學會選用電控元件、設計電路並掌握安全規範。</li>
+                            <li class="list-item">掌握 PLC / HMI 程式撰寫與除錯技巧。</li>
+                            <li class="list-item">獨立完成小型電控系統的組裝、配線、測試與調校。</li>
+                            <li class="list-item">透過業界合作專題，培養專業報告與發表能力。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="subsection-title">學習成效 (Learning Outcomes)</h3>
+                        <ul class="list-none space-y-2 text-gray-700 pl-4">
+                            <li class="list-item"><span class="font-bold">LO1：</span> 理解電控系統的架構與原理。</li>
+                            <li class="list-item"><span class="font-bold">LO2：</span> 進行電控元件與電路的設計。</li>
+                            <li class="list-item"><span class="font-bold">LO3：</span> 撰寫與除錯控制程式 (PLC / HMI)。</li>
+                            <li class="list-item"><span class="font-bold">LO4：</span> 完成機電系統整合與調校。</li>
+                            <li class="list-item"><span class="font-bold">LO5：</span> 獨立完成專題並進行專業發表。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="mb-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="section-title">週次進度表</h2>
+                    <p class="text-gray-600">本課程採專案導向學習，循序漸進引導學生完成期末專題。</p>
+                </div>
+                <div class="divide-y divide-gray-200">
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第1週：課程導入與安全教育</h4>
+                        <p class="text-gray-700">課程介紹、職能說明、安全教育測驗、分組。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> 安全測驗（必須通過）、小組名單。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第2週：產業論壇 × 企業對談</h4>
+                        <p class="text-gray-700">企業講師與教授對談，產業趨勢與實務案例。學生小組討論，提出初步專題想法。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> 小組心得報告。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第3週：PLC 基礎架構與 I/O</h4>
+                        <p class="text-gray-700">PLC 硬體架構、I/O 點位與數位訊號。PLC 開發環境操作，完成簡單控制。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> I/O 測試流程報告。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第4週：Timer / Counter 與基本控制</h4>
+                        <p class="text-gray-700">計時器、計數器應用，梯形圖程式練習。完成一段順序控制程式。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> 程式檔與測試紀錄。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第5週：HMI 入門</h4>
+                        <p class="text-gray-700">HMI 設計原則，常用控制/監控元件。實作：設計簡單 HMI 介面。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> HMI wireframe 初稿。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第6週：工業通訊與安全流程</h4>
+                        <p class="text-gray-700">工業通訊協定（Modbus 等）、PLC–HMI 連線設定。異常流程設計與模擬。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> 點位對照表、異常流程圖。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第7週：系統小整合</h4>
+                        <p class="text-gray-700">PLC 基礎程式與 HMI 畫面結合。系統整合測試與小組討論。</p>
+                        <p class="text-gray-700 mt-1"><span class="font-bold">課堂作業：</span> 小組 Demo 報告。</p>
+                    </div>
+                    <div class="py-4">
+                        <h4 class="font-bold text-lg text-blue-600">第8週：專題初稿提交</h4>
